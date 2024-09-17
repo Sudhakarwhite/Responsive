@@ -1,0 +1,45 @@
+.card-container {
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the card */
+  display: flex; /* Flexbox layout for content alignment */
+  flex-direction: row; /* Image and content in a row by default */
+}
+
+/* Image Styling */
+.card-container img {
+  max-width: 150px; /* Adjust the width as needed */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+/* Text Container Styling */
+.card-container .card-body {
+  margin-left: 15px; /* Space between image and text */
+}
+
+/* Title and Text Styling */
+.card-container .card-title {
+  font-size: 1rem;
+}
+
+.card-container .card-text {
+  font-size: 1.5rem;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center; /* Center align content */
+    text-align: center; /* Center text alignment */
+  }
+
+  .card-container img {
+    max-width: 100%; /* Make the image take the full width on mobile */
+    margin-bottom: 15px; /* Add space below the image */
+  }
+
+  .card-container .card-body {
+    margin-left: 0; /* Remove margin when stacked vertically */
+  }
+}

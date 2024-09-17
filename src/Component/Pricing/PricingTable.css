@@ -1,0 +1,80 @@
+/* Card styling */
+.card {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+  }
+  
+  /* Card header styling */
+  .card-header {
+    padding: 20px;
+  }
+  
+  /* Align price to the left */
+  .card-header .price {
+    text-align: left;
+    color: #60f542; 
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Align HR line for price under the price */
+  .card-header .price-divider {
+    border: 1px solid #7bfc03; /* Green color for the line */
+    margin: 10px 0; /* Adjust margin as needed */
+  }
+  
+  /* List styling */
+  .card-body ul {
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left; /* Align list items to the left */
+  }
+  
+  /* List items styling */
+  .card-body ul li {
+    position: relative;
+    padding-left: 30px; /* Adjust for the symbol space */
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white; /* List item text color set to white */
+  }
+  
+  /* Plus symbol styling */
+  .card-body ul li::before {
+    content: "+";
+    color: #7bfc03; /* Green color for the + symbol */
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+  }
+  
+  /* Button spacing */
+  .btn-spacing {
+    margin-right: 10px; /* Adds spacing between buttons */
+    
+  }
+  .color{
+    color: #60f542;
+  }
+  
+  /* Most Popular button styling */
+  .btn-popular {
+    background-color: #60f542; /* Green color for the button */
+    border: none;
+    color: black; /* Text color inside the button */
+    font-weight: bold;
+  }
+  
+  /* Custom button styling */
+  .btn-custom {
+    background-color: #60f542;
+    color: #ffffff; /* Optional: Ensure text is readable */
+  }
+
+  .payment-details{
+    text-align: left;
+    margin: 0; /* Remove default margin */
+  }
+

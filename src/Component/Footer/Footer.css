@@ -1,0 +1,130 @@
+.footer {
+  background-color: black; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the footer container */
+  margin-top: 100px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h5 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Add spacing between icons */
+}
+
+.social-media li a:hover {
+  color: #6ade1d; /* Change color on hover */
+}
+
+.color {
+  color: #6ade1d;
+}
+
+/* Container for centering the box */
+.box-container {
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (optional) */
+  height: 80vh; /* Full viewport height (optional) */
+  background-color: #6ade1d; /* Set background color to green */
+}
+
+.box {
+  background-color: #254e0a;
+  color: #fff; /* Set text color to white for contrast */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add padding inside the box */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  width: 50%; /* Set the width of the box */
+  margin-bottom: -405px; /* Adjust this value or use alternative positioning */
+}
+
+.box h1 {
+  margin-bottom: 10px; /* Space between heading and paragraph */
+}
+
+.box p {
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.box button {
+  background-color: #fff; /* Button background color */
+  color: #6ade1d; /* Button text color */
+  border: none; /* Remove default button border */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.box button:hover {
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .footer-section {
+    margin: 10px 0; /* Margin for vertical stacking */
+    text-align: center; /* Center text */
+  }
+
+  .box {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-bottom: 0; /* Reset margin-bottom */
+    position: relative; /* Reset positioning */
+  }
+
+  .box-container {
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+
+  .social-media {
+    flex-direction: column; /* Stack social media icons vertically */
+    gap: 10px; /* Reduce gap between icons */
+  }
+}

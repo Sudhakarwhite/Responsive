@@ -1,0 +1,163 @@
+.help-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons container */
+  .buttons-container {
+    margin-top: 20px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons on small screens */
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  /* Subscription section styles */
+  .subscription-section {
+    padding-top: 30px;
+    border-top: 2px solid #ddd;
+  }
+  
+  .subscription-text {
+    max-width: 600px;
+    text-align: left;
+    flex: 1;
+  }
+  
+  .subscription-description {
+    max-width: 560px;
+    text-align: left;
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .subscription-description p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .subscription-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  
+  @media (max-width: 768px) {
+    /* On smaller screens, stack subscription items vertically */
+    .subscription-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subscription-text, .subscription-description {
+      text-align: center;
+      padding: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button-row {
+      gap: 10px;
+    }
+  
+    button {
+      width: 100%; /* Make buttons take full width on small screens */
+    }
+  }
+  
+  /* Row with vertical and horizontal lines */
+  .row-with-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .col {
+    position: relative;
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .col:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc; /* Vertical line */
+  }
+  
+  .content-box {
+    align-items: center;
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    color: aliceblue;
+  }
+
+  
+  .icon {
+    font-size: 36px;
+    color: #6ade1d;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  .icon {
+    font-size: 36px;
+    color: #6ade1d; /* Red color for the logo */
+    margin-right: 15px; /* Space between logo and text */
+  }
+  
+  .infinity-logo {
+    font-size: 48px;
+    color: #6ade1d; /* Red color for infinity logo */
+  }
+  
+  h3 {
+    margin-top: 0; /* Remove extra margin from the top */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  p {
+    margin-top: 5px; /* Adjust margin */
+    color: #ddd; /* Change color for better contrast */
+  }
+  

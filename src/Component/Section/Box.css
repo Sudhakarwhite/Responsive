@@ -1,0 +1,64 @@
+/* General container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Image styling: Reduce size and apply border-radius */
+img {
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.text{
+  color: white;
+}
+/* Flexbox for the icons row */
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-box i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Icon box spacing */
+.icon-box h2 {
+  margin: 10px 0;
+}
+
+/* Mobile responsiveness for the layout */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  /* Stack text and images on top of each other for mobile */
+  .col-6 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Mobile icon row becomes vertical */
+  .icon-row {
+    flex-direction: column;
+  }
+
+  .icon-box {
+    margin-bottom: 20px;
+  }
+}

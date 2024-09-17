@@ -1,0 +1,134 @@
+/* General styles */
+.brand-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.highlight {
+    color: rgb(43, 255, 0);
+}
+
+.start-button {
+    background-color: rgb(43, 255, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.start-button:hover {
+    background-color: #4CAF50;
+}
+
+/* Logo Container Styles */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: #383434;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo-icon {
+    font-size: 50px;
+    color: white;
+    margin-right: 10px;
+}
+
+.logo-container span {
+    font-size: 16px;
+    color: white;
+}
+
+/* Services Section */
+.services-container {
+    margin-top: 50px;
+}
+
+.services-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.services-description {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Services Grid Layout */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the boxes */
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(43, 255, 0);
+    border: 2px solid rgb(43, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-box h1 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: row; /* Align logos in a row */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center logos */
+    }
+
+    .brand {
+        margin: 10px;
+        flex: 1 1 50%; /* Two logos per line */
+        max-width: 50%; /* Ensure only two logos per line */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        border: 1px solid white; /* Border inside */
+    }
+
+    .brand .logo-icon {
+        font-size: 40px; /* Adjust size for mobile */
+    }
+
+    .services-grid {
+        flex-direction: column;
+    }
+
+    .service-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
